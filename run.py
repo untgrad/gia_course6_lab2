@@ -3,7 +3,7 @@ import os
 import requests
 
 # set source dir for feedback file:
-src_dir = "feedback/"
+src_dir = "/data/feedback/"
 
 # capture list of files:
 files = os.listdir(src_dir)
@@ -31,4 +31,4 @@ for entry in feedback:
     if response.ok:
         print("loaded entry")
     else:
-        print(f"load entry error: {response.status_code}")
+        print("load entry error: {response.status_code}")
