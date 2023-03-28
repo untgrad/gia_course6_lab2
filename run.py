@@ -3,7 +3,7 @@ import os
 import requests
 
 # set source dir for feedback file:
-src_dir = "feedback/"
+src_dir = "/data/feedback/"
 
 # capture list of files:
 files = os.listdir(src_dir)
@@ -22,7 +22,7 @@ for file in files:
     lines = readlines(file)
     feedback.append(dict(zip(keys, lines)))
 
-# set host url:
+# set host url localhost or username IP given in Lab:
 url = "http://localhost/feedback/"
 
 # post feedback entries:
