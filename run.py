@@ -3,7 +3,8 @@ import os
 import requests
 
 # set source dir for feedback file:
-src_dir = "feedback/"
+#List all .txt files under /data/feedback directory that contains the actual feedback to be displayed on the company's website.
+src_dir = "/data/feedback/"
 
 # capture list of files:
 files = os.listdir(src_dir)
